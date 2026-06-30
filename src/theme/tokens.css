@@ -1,0 +1,73 @@
+/*
+  Feekr Code — fused tema tokenlari
+  Variant 1 (Neo Terminal) + 4 (Duolingo dars yo'li) + 5 (Sci-fi HUD)
+  data-theme atributiga qarab almashadi.
+*/
+
+:root,
+[data-theme="neon"] {
+  /* Asos — Neo Terminal / Sci-fi qora fon */
+  --bg-0: #05080d;
+  --bg-1: #0a1018;
+  --bg-2: #0f1722;
+  --bg-3: #16202e;
+  --panel: rgba(18, 28, 40, 0.72);
+  --panel-solid: #111b27;
+  --border: rgba(86, 209, 255, 0.16);
+  --border-strong: rgba(86, 209, 255, 0.4);
+  --grid-line: rgba(86, 209, 255, 0.06);
+
+  /* Matn */
+  --text-0: #e8f4ff;
+  --text-1: #aebfd0;
+  --text-2: #6b7d92;
+
+  /* Aksent — terminal yashil + sci-fi siyan/to'q sariq */
+  --accent: #39d353; /* terminal green */
+  --accent-2: #37b6ff; /* sci-fi cyan */
+  --accent-3: #ef9f27; /* HUD amber */
+  --accent-glow: rgba(57, 211, 83, 0.55);
+
+  /* Holatlar (Duolingo dars tugunlari) */
+  --done: #2bbf6a;
+  --current: #37b6ff;
+  --locked: #2a3645;
+  --locked-text: #51637a;
+
+  /* Semantik */
+  --danger: #ff5d5d;
+  --warn: #ef9f27;
+  --success: #2bbf6a;
+
+  --font-ui: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 18px;
+  --hud-ring: 5px;
+}
+
+/* Och tema (Modern IDE / Duolingo light) — Bosqich 8'da kengaytiriladi */
+[data-theme="light"] {
+  --bg-0: #f4f6fb;
+  --bg-1: #ffffff;
+  --bg-2: #f0f3f9;
+  --bg-3: #e6ebf4;
+  --panel: #ffffff;
+  --panel-solid: #ffffff;
+  --border: rgba(20, 40, 70, 0.12);
+  --border-strong: rgba(20, 40, 70, 0.28);
+  --grid-line: rgba(20, 40, 70, 0.05);
+  --text-0: #0e1726;
+  --text-1: #44566c;
+  --text-2: #8492a6;
+  --accent: #1d9e75;
+  --accent-2: #2f7fe0;
+  --accent-3: #c4760f;
+  --accent-glow: rgba(47, 127, 224, 0.35);
+  --done: #1d9e75;
+  --current: #2f7fe0;
+  --locked: #d6deeb;
+  --locked-text: #8492a6;
+}

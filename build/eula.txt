@@ -1,0 +1,81 @@
+FEEKR CODE — SO'NGGI FOYDALANUVCHI LITSENZIYA KELISHUVI (EULA)
+
+© 2026 Feekr. Barcha huquqlar himoyalangan.
+
+DIQQAT! USHBU DASTURNI O'RNATISHDAN OLDIN MAZKUR KELISHUVNI DIQQAT BILAN
+O'QING. "O'rnatish" yoki "Qabul qilaman" tugmasini bosish orqali Siz quyidagi
+barcha shartlarga to'liq va so'zsiz rozilik bildirasiz. Agar shartlarga rozi
+bo'lmasangiz, dasturni o'rnatmang va undan foydalanmang.
+
+--------------------------------------------------------------------------------
+1. MULKCHILIK VA MUALLIFLIK HUQUQI
+--------------------------------------------------------------------------------
+1.1. "Feekr Code" dasturiy ta'minoti (bundan keyin — "Dastur"), uning barcha
+     nusxalari, kodi, dizayni, logotipi, matnlari, darslari, grafikasi, ovozi
+     va boshqa tarkibiy qismlari FEEKR ning ("Huquq egasi") mutlaq mulki
+     hisoblanadi va mualliflik huquqi hamda intellektual mulk to'g'risidagi
+     qonunlar bilan himoyalangan.
+1.2. Dastur Sizga SOTILMAYDI, balki faqat ushbu Kelishuv shartlari asosida
+     FOYDALANISHGA beriladi (litsenziyalanadi). Dasturga bo'lgan barcha huquqlar,
+     shu jumladan oshkor etilmagan barcha huquqlar, Huquq egasida saqlanadi.
+
+--------------------------------------------------------------------------------
+2. BERILADIGAN HUQUQLAR (LITSENZIYA)
+--------------------------------------------------------------------------------
+2.1. Huquq egasi Sizga Dasturdan SHAXSIY, NOTIJORAT, BOShQAGA BERIB BO'LMAYDIGAN
+     va ODDIY (eksklyuziv bo'lmagan) tarzda foydalanish huquqini beradi.
+2.2. Ushbu huquq faqat Dasturni o'z qurilmangizda o'rnatish va belgilangan
+     maqsadda (dasturlashni o'rganish) ishlatish bilan cheklanadi.
+
+--------------------------------------------------------------------------------
+3. TAQIQLAR
+--------------------------------------------------------------------------------
+Quyidagilar QAT'IYAN TAQIQLANADI va Huquq egasining yozma roziligisiz amalga
+oshirilsa, qonun buzilishi hisoblanadi:
+3.1. Dasturni yoki uning biror qismini nusxalash, ko'paytirish, tarqatish,
+     nashr etish, ommaga yetkazish yoki uchinchi shaxslarga berish;
+3.2. Dasturni sotish, ijaraga berish, lizingga berish, sublitsenziyalash yoki
+     undan tijorat maqsadida foyda olish;
+3.3. Dasturni dekompilyatsiya qilish, disassembllash, teskari muhandislik
+     (reverse engineering) qilish yoki manba kodini ajratib olishga urinish;
+3.4. Dasturni o'zgartirish, qayta ishlash, hosila asarlar yaratish, brending,
+     logotip yoki mualliflik belgilarini olib tashlash yoxud o'zgartirish;
+3.5. Dasturdan qonunga zid, zararli yoki uchinchi shaxslar huquqlarini buzuvchi
+     maqsadlarda foydalanish.
+
+--------------------------------------------------------------------------------
+4. HUQUQBUZARLIK OQIBATLARI
+--------------------------------------------------------------------------------
+4.1. Ushbu Kelishuv shartlari buzilgan taqdirda litsenziya AVTOMATIK ravishda,
+     ogohlantirishsiz bekor qilinadi.
+4.2. Huquqbuzar O'zbekiston Respublikasi va xalqaro qonunchilikka muvofiq
+     FUQAROVIY, MA'MURIY va JINOIY javobgarlikka tortilishi, shuningdek
+     yetkazilgan zararni to'liq qoplashi mumkin.
+4.3. Huquq egasi o'z huquqlarini himoya qilish uchun barcha qonuniy chora-
+     tadbirlarni ko'rish huquqini saqlab qoladi.
+
+--------------------------------------------------------------------------------
+5. KAFOLATNING YO'QLIGI
+--------------------------------------------------------------------------------
+5.1. Dastur "QANDAY BO'LSA, SHUNDAY" (AS IS) holatda, hech qanday oshkor yoki
+     nazarda tutilgan kafolatlarsiz taqdim etiladi.
+5.2. Huquq egasi Dasturning uzluksiz, xatosiz ishlashini yoki muayyan
+     maqsadlarga mosligini kafolatlamaydi.
+
+--------------------------------------------------------------------------------
+6. JAVOBGARLIKNING CHEKLANISHI
+--------------------------------------------------------------------------------
+6.1. Qonun ruxsat etgan eng yuqori darajada, Huquq egasi Dasturdan foydalanish
+     yoki foydalana olmaslik natijasida yuzaga keladigan har qanday to'g'ridan-
+     to'g'ri, bilvosita, tasodifiy yoki oqibatli zararlar uchun javobgar emas.
+
+--------------------------------------------------------------------------------
+7. YAKUNIY QOIDALAR
+--------------------------------------------------------------------------------
+7.1. Ushbu Kelishuv O'zbekiston Respublikasi qonunchiligiga muvofiq tartibga
+     solinadi.
+7.2. Dasturni o'rnatish yoki ishlatish — ushbu shartlarni o'qigan, tushungan va
+     ularga to'liq rozi bo'lganingizni anglatadi.
+
+Feekr Code — dasturlashni o'yin orqali o'rganing.
+© 2026 Feekr. Barcha huquqlar himoyalangan.

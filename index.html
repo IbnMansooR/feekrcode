@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      CSP — asosiy himoya. Pyodide/sql.js endi LOKAL bundle qilingan (offline), shu
+      sabab CDN'lar olib tashlandi. connect-src faqat 'self' va Wandbox (kompilyatsiya
+      tillari online ishlaydi) — ishlatilgan kod boshqa serverга ma'lumot eksfiltratsiya
+      qila olmaydi. script/style ataylab keng (Monaco eval + WASM ishlashi uchun).
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data:;
+               worker-src 'self' blob: data:;
+               child-src 'self' blob: data:;
+               frame-src 'self' blob: data:;
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data: blob:;
+               font-src 'self' data:;
+               connect-src 'self' blob: data: https://wandbox.org;"
+    />
+    <link rel="icon" type="image/png" href="./feekr-logo.png" />
+    <title>Feekr Code</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #05080d;
+        overflow: hidden;
+      }
+      #root {
+        height: 100vh;
+        width: 100vw;
+      }
+      /* Dastlabki yuklanish ekrani — JS yuklanmaguncha */
+      #boot-fallback {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        color: #39d353;
+        font-family: monospace;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot-fallback">FEEKR CODE — yuklanmoqda…</div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

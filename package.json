@@ -1,0 +1,86 @@
+{
+  "name": "feekr-code",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Feekr Code — 12 dasturlash tilini o'rgatadigan gamified ilova",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "electron:dev": "vite build && electron .",
+    "dist": "vite build && electron-builder --win nsis",
+    "dist:nosign": "vite build && electron-builder --win nsis -c.win.signAndEditExecutable=false",
+    "dist:portable": "vite build && electron-builder --win portable"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "localforage": "^1.10.0",
+    "@monaco-editor/react": "^4.6.0",
+    "monaco-editor": "^0.52.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.28.0",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  },
+  "build": {
+    "appId": "uz.feekr.code",
+    "productName": "Feekr Code",
+    "copyright": "© 2026 Feekr. Barcha huquqlar himoyalangan.",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "build/icon.ico"
+    ],
+    "asarUnpack": [
+      "**/pyodide/**",
+      "**/sqljs/**"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Feekr Code",
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false,
+      "license": "build/eula.txt",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "installerHeader": "build/installerHeader.bmp",
+      "installerSidebar": "build/installerSidebar.bmp",
+      "uninstallerSidebar": "build/installerSidebar.bmp",
+      "uninstallDisplayName": "Feekr Code ${version}",
+      "artifactName": "Feekr Code Setup ${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "Feekr Code.${ext}"
+    }
+  }
+}

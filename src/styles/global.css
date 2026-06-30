@@ -1,0 +1,131 @@
+@import "../theme/tokens.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-0);
+  color: var(--text-0);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Sci-fi HUD fon panjarasi */
+.app-bg {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-0);
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 44px 44px;
+  z-index: 0;
+}
+.app-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% -10%,
+    rgba(55, 182, 255, 0.1),
+    transparent 60%
+  );
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-3);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* Umumiy panel */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  backdrop-filter: blur(8px);
+}
+
+/* HUD yorqin matn */
+.glow {
+  text-shadow: 0 0 12px var(--accent-glow);
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.05em;
+  background: var(--accent);
+  vertical-align: -2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.4s ease both; }
+
+/* Dars markdown */
+.lesson-md { color: var(--text-1); font-size: 14.5px; line-height: 1.7; }
+.lesson-md h1, .lesson-md h2, .lesson-md h3 { color: var(--text-0); }
+.lesson-md h2 { font-size: 19px; margin: 0 0 12px; }
+.lesson-md code {
+  font-family: var(--font-mono);
+  background: var(--bg-3);
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: var(--accent);
+}
+.lesson-md pre {
+  background: #05080d;
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+.lesson-md pre code { background: none; padding: 0; }
+.lesson-md blockquote {
+  border-left: 3px solid var(--accent-2);
+  margin: 12px 0;
+  padding: 4px 14px;
+  color: var(--text-2);
+}
+.lesson-md a { color: var(--accent-2); }
+.lesson-md table { border-collapse: collapse; width: 100%; }
+.lesson-md th, .lesson-md td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; }
