@@ -1,7 +1,6 @@
 # Feekr Code
 
 > 12 ta dasturlash tilini o'yin orqali o'rgatadigan desktop ilova.
-> HackHub ("Ultimate Hacker Simulator") interfeysidan ilhomlangan.
 
 ## Nima bu?
 
