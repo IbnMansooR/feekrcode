@@ -15,6 +15,7 @@
     "dist:portable": "vite build && electron-builder --win portable"
   },
   "dependencies": {
+    "electron-updater": "^6.3.9",
     "framer-motion": "^11.11.17",
     "localforage": "^1.10.0",
     "@monaco-editor/react": "^4.6.0",
@@ -40,6 +41,13 @@
     "appId": "uz.feekr.code",
     "productName": "Feekr Code",
     "copyright": "© 2026 Feekr. Barcha huquqlar himoyalangan.",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "IbnMansooR",
+        "repo": "feekrcode"
+      }
+    ],
     "directories": {
       "output": "release",
       "buildResources": "build"
@@ -77,10 +85,10 @@
       "installerSidebar": "build/installerSidebar.bmp",
       "uninstallerSidebar": "build/installerSidebar.bmp",
       "uninstallDisplayName": "Feekr Code ${version}",
-      "artifactName": "Feekr Code Setup ${version}.${ext}"
+      "artifactName": "Feekr-Code-Setup-${version}.${ext}"
     },
     "portable": {
-      "artifactName": "Feekr Code.${ext}"
+      "artifactName": "Feekr-Code-Portable.${ext}"
     }
   }
 }

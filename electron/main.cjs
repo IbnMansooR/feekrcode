@@ -1,5 +1,24 @@
 const { app, BrowserWindow, shell } = require("electron");
+const { autoUpdater } = require("electron-updater");
 const path = require("path");
+
+/**
+ * Avtomatik yangilanish (electron-updater + GitHub Releases).
+ * Ilova ochilganda serverdagi `latest.yml`ни tekshiradi; yangi versiya bo'lsa
+ * fonда yuklab oladi (faqat o'zgargan qismni — .blockmap orqali) va qayta ishga
+ * tushganda o'rnatadi. Foydalanuvchi hech narsa qilmaydi.
+ */
+function setupAutoUpdate() {
+  // Faqat paketlangan build'da — dev'da `app-update.yml` bo'lmaydi.
+  if (!app.isPackaged) return;
+  autoUpdater.autoDownload = true;
+  autoUpdater.autoInstallOnAppQuit = true;
+  autoUpdater.on("error", (err) => {
+    console.error("[auto-update]", err == null ? "no error" : err.message || String(err));
+  });
+  // Internet yo'q yoki reliz topilmasa — jim qoladi (ilova baribir ishlaydi).
+  autoUpdater.checkForUpdatesAndNotify().catch(() => {});
+}
 
 /** Tashqi havola xavfsizmi — faqat http/https tizim brauzerida ochiladi.
  *  smb:, file:, va boshqa OS protokollari (NTLM sızması, fayl ochish) bloklanadi. */
@@ -57,6 +76,7 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
+  setupAutoUpdate();
   app.on("activate", () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
